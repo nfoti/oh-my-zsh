@@ -1,0 +1,3 @@
+
+Install:
+ ln -s ~/.oh-my-zsh/zshrc.nick ~/.zshrc
