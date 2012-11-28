@@ -41,5 +41,8 @@ function git_prompt() {
   echo "${ZSH_THEME_GIT_PROMPT_PREFIX}[${ref#refs/heads/}%{$reset_color%}$(parse_git_dirty)${ZSH_THEME_GIT_PROMPT_PREFIX}]${ZSH_THEME_GIT_PROMPT_SUFFIX}"
 }
 
+# Good for Tomorrow-Bright
+#PROMPT='%{$fg_bold[red]%}%m%{$fg[green]%}:%{$reset_color$fg_bold[green]%}%c%{$fg_bold[yellow]%}$(hg_ps1)%{$reset_color%}$(git_prompt)%{$reset_color%}[%{$reset_color%}%{$fg_bold[cyan]%}%h%{$reset_color%}]%{$reset_color%} '
+# Good for solarized (both versions)
 PROMPT='%m%{$fg_bold[black]%}:%{$reset_color$fg[blue]%}%c%{$fg_bold[yellow]%}$(hg_ps1)%{$reset_color%}$(git_prompt)%{$reset_color%}%{$fg_bold[black]%}[%{$reset_color%}%{$fg[red]%}%h%{$fg_bold[black]%}]%{$reset_color%} '
 #PROMPT='%m%{$fg_bold[black]%}:%{$reset_color$fg[blue]%}%c%{$fg_bold[yellow]%}$(hg_ps1)%{$reset_color%}$(git_prompt_info)%{$reset_color%}%{$fg_bold[black]%}[%{$reset_color%}%{$fg[red]%}%h%{$fg_bold[black]%}]%{$reset_color%} '
